@@ -38,6 +38,7 @@ fn main_window(msg: String) -> PyResult<()> {
     disable_raw_mode()?;
     Ok(())
 }
+
 /// A Python module implemented in Rust.
 #[pymodule]
 fn core(m: &Bound<'_, PyModule>) -> PyResult<()> {
